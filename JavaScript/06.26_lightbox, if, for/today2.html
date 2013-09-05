@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+				 "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>오늘의 수업2-If문</title>
+</head>
+
+<body>
+<script type="text/javascript">
+<!--
+var isBig;  //화면이 큰가?
+var isSamsung; //삼성인가?
+isBig = confirm("화면이 큰걸 원하세요??");
+if (isBig)
+{
+	isSamsung = confirm("삼성 핸드폰으로 드릴까요?");
+	if (isSamsung)
+	{
+		//할부원금
+		var halwon;
+		halwon = prompt("기계값은 얼마정도 예상하세요?", 50);
+		if (halwon >= 50)
+		{
+			alert("갤럭시 노트2를 추천합니다. 고객님");
+		} else {
+			alert("갤럭시 그랜드를 추천합니다. 고객님");
+		}
+		
+	} else {
+		alert("옵티머스G pro를 추천합니다. 고객님");
+	}
+
+} else {
+	alert("갤럭시 S4를 추천합니다. 고객님");
+}
+//-->
+</script>
+</body>
+</html>
